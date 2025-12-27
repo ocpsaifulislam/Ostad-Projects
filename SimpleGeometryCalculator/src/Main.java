@@ -32,7 +32,6 @@ public class Main {
         double result = 0;
         if (Objects.equals(type, "AREA")) {
             result = length * width;
-
         } else if (Objects.equals(type, "PERIMETER")) {
             result = 2 * (length + width);
         }
@@ -48,4 +47,5 @@ public class Main {
         perimeter = calculation(length, width, PERIMETER);
         finalOutPut(length, width, area, perimeter);
     }
+
 }
