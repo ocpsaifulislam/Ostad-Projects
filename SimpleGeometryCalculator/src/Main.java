@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -29,10 +30,10 @@ public class Main {
 
     private static double calculation(double length, double width, String type) {
         double result = 0;
-        if (type == "AREA") {
+        if (Objects.equals(type, "AREA")) {
             result = length * width;
 
-        } else if (type == "PERIMETER") {
+        } else if (Objects.equals(type, "PERIMETER")) {
             result = 2 * (length + width);
         }
         return result;
