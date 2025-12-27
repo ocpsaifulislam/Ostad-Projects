@@ -45,8 +45,6 @@ public class Main {
         width = getInputPositiveValue(sc, "Enter the width: ");
         area = calculation(length, width, AREA);
         perimeter = calculation(length, width, PERIMETER);
-//        finalOutPut(length, width, area, perimeter);
-        System.out.printf("%-10s : %.2f%n", "Length", length);
-
+        finalOutPut(length, width, area, perimeter);
     }
 }
